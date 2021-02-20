@@ -14,7 +14,7 @@ import sam.employeemanager.repository.EmployeeRepository;
 public class EmployeeService {
 
 	@Autowired
-	EmployeeRepository repository;
+	private EmployeeRepository repository;
 
 	public Employee addEmployee(Employee employee) {
 		employee.setEmployeeCode(UUID.randomUUID().toString());
